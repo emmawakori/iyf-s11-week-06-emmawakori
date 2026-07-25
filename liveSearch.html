@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Directory</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    input, select { margin: 0.5rem; padding: 0.5rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <h1>User Directory</h1>
+
+  <!-- Search -->
+  <input type="text" id="searchInput" placeholder="Search by name or email">
+
+  <!-- Sort -->
+  <select id="sortSelect">
+    <option value="asc">Sort by Name (A–Z)</option>
+    <option value="desc">Sort by Name (Z–A)</option>
+  </select>
+
+  <!-- Filter -->
+  <select id="cityFilter">
+    <option value="">Filter by City</option>
+    <option value="Nairobi">Nairobi</option>
+    <option value="Mombasa">Mombasa</option>
+    <option value="Kisumu">Kisumu</option>
+  </select>
+
+  <!-- User Table -->
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src ="liveSearch.js"></script>
+</body>
+</html>
